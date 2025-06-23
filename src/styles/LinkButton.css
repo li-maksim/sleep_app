@@ -1,0 +1,10 @@
+.link_btn {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 140%;
+    transition: 0.4s;
+}
+
+.link_btn:hover {
+    color: var(--text-hover-color);
+}

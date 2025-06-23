@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Kufam', sans-serif;
+  --bg-color: #141414;
+  --text-color: #FFFFFF;
+  --text-hover-color: #FEBB5B;
+  --btn-color: #9A5DB8;
+  color: var(--text-color);
+}
+
 body {
   margin: 0;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
 }
