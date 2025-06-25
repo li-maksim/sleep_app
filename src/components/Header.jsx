@@ -1,12 +1,13 @@
 import logo from '../assets/logo.png'
 import LinkButton from './LinkButton'
 import Button from './Button'
+import '../styles/Header.css'
 
 function Header() {
 
     return (
         <header>
-            <div className="container">
+            <div className="container header">
                 <a href="#" className="logo">
                     <img src={logo} alt="SleepApp - Home" />
                 </a>
@@ -15,7 +16,7 @@ function Header() {
                     <LinkButton text={'Price'} />
                     <LinkButton text={'Contacts'} />
                 </div>
-                <Button text={'Try for free'} />
+                <Button text={'Try for free'} altColor={true} />
             </div>
         </header>
     )

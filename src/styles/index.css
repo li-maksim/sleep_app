@@ -6,6 +6,11 @@
   --text-color: #FFFFFF;
   --text-hover-color: #FEBB5B;
   --btn-color: #9A5DB8;
+  --btn-color-focus: #B87BD6;
+  --btn-color-click: #7C3F9A;
+  --btn-alt-color: #FEBB5B;
+  --btn-alt-color-focus: #FFD979;
+  --btn-alt-color-click: #E09D3D;
   color: var(--text-color);
 }
 

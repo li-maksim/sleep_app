@@ -1,0 +1,37 @@
+.home h1 {
+    margin: 0;
+    margin-top: 100px;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.home h1 span {
+    margin-left: 555px;
+}
+
+.home p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.home .home_img_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 388px;
+    height: 388px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home .home_img {
+    margin: 0 auto;
+}
+
+.home .btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+}

@@ -7,4 +7,26 @@
     font-weight: 500;
     background-color: var(--btn-color);
     border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-color-focus);
+}
+
+.btn:active {
+    background-color: var(--btn-color-click);
+}
+
+.btn_alt_color {
+    background-color: var(--btn-alt-color);
+    color: var(--bg-color);
+}
+
+.btn_alt_color:hover {
+    background-color: var(--btn-alt-color-focus);
+}
+
+.btn_alt_color:active {
+    background-color: var(--btn-alt-color-click);
 }

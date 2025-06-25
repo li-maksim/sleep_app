@@ -1,8 +1,8 @@
 import '../styles/Button.css'
 
-function Button({ text, fn }) {
+function Button({ text, fn, altColor = false }) {
     return (
-        <button className="btn" onClick={fn}>{text}</button>
+        <button className={altColor ? "btn" : "btn btn_alt_color"} onClick={fn}>{text}</button>
     )
 }
 
