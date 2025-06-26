@@ -11,6 +11,7 @@
   --btn-alt-color: #FEBB5B;
   --btn-alt-color-focus: #FFD979;
   --btn-alt-color-click: #E09D3D;
+  --icon-alt-color: #ECB2AD;
   color: var(--text-color);
 }
 

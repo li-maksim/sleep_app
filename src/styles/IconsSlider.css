@@ -1,0 +1,17 @@
+.icon_slider .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--btn-color);
+}
+
+.icon_slider .icon.alt_color {
+    background-color: var(--icon-alt-color);
+}
+
+.icon_slider .icon img {
+    height: 50px;
+}
