@@ -21,8 +21,13 @@ function IconsSlider({icons, direction}) {
     })
 
     return (
-        <div className={`icon_slider ${direction}`} >
-            {rowOfIcons}
+        <div className="icon_slider">
+            <div className={`icons ${direction}`}>
+                {rowOfIcons}
+            </div>
+            <div className={`icons ${direction}`}>
+                {rowOfIcons}
+            </div>
         </div>
     )
 }

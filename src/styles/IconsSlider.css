@@ -1,4 +1,26 @@
-.icon_slider .icon {
+.icon_slider {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+}
+
+.icon_slider .icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 300%;
+    height: 100%;
+}
+
+.left {
+    animation: slideshowLeft1 22s linear infinite;
+}
+
+.left:last-child {
+    animation: slideshowLeft2 22s linear infinite;
+}
+
+.icon_slider .icons .icon {
     width: 80px;
     height: 80px;
     display: flex;
@@ -8,10 +30,29 @@
     background-color: var(--btn-color);
 }
 
-.icon_slider .icon.alt_color {
+.icon_slider .icons .icon.alt_color {
     background-color: var(--icon-alt-color);
 }
 
-.icon_slider .icon img {
+.icon_slider .icons .icon img {
     height: 50px;
+}
+
+
+.icon_slider:hover .left {
+    animation-play-state: paused;
+}
+
+@keyframes slideshowLeft1 {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideshowLeft2 {
+    from {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
