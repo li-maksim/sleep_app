@@ -1,0 +1,19 @@
+.collection .h2 {
+    margin-top: 128px;
+}
+
+.collection .main_text {
+    display: block;
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.collection .icon_slider {
+    margin-top: 40px;
+}
+
+.collection .collection_end {
+    margin-top: 40px;
+    font-size: 21px;
+    text-align: center;
+}

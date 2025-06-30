@@ -8,13 +8,8 @@ function IconsSlider({icons, direction}) {
         const str = arr.join('')
         const alt = str.replace('_', ' ')
 
-        let className = 'icon '
-        if (i % 2 === 0) {
-            className = className + 'alt_color'
-        }
-
         return (
-            <div key={e.text + i} className={className}>
+            <div key={e.text + i} className="icon">
                 <img src={e.src} alt={alt} />
             </div>
         )
