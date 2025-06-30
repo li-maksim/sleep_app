@@ -1,9 +1,10 @@
 .icon_slider {
     position: relative;
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     overflow: hidden;
-    height: 80px;
+    height: 140px;
     max-width: 100%;
     white-space: nowrap;
 }
@@ -13,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 140px;
     width: 150px;
     z-index: 2;
     background: linear-gradient(to right, var(--bg-color), transparent)
@@ -24,7 +25,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100px;
+    height: 140px;
     width: 150px;
     z-index: 2;
     background: linear-gradient(to right, transparent, var(--bg-color))
@@ -33,6 +34,7 @@
 .icon_slider .icons {
     white-space: nowrap;
     display: flex;
+    align-items: center;
     gap: 120px;
     width: 300%;
     height: 100%;
@@ -47,6 +49,7 @@
 }
 
 .icon_slider .icons .icon {
+    position: relative;
     width: 80px;
     height: 80px;
     display: flex;
@@ -54,6 +57,16 @@
     align-items: center;
     border-radius: 100%;
     background-color: var(--btn-color);
+}
+
+.icon_slider .icons .icon .icon_title {
+    position: absolute;
+    top: -30px;
+    visibility: hidden;
+}
+
+.icon_slider .icons .icon:hover .icon_title {
+    visibility: visible;
 }
 
 .icon_slider .icons .icon:last-child {
@@ -64,7 +77,7 @@
     height: 50px;
 }
 
-.icon_slider .icons .icon:nth-child(even) {
+.icon_slider .icons .icon.alt_color {
     background-color: var(--icon-alt-color);
 }
 
