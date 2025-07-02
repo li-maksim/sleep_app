@@ -1,0 +1,12 @@
+.manage .h2, .manage .p {
+    position: relative;
+    z-index: 2;
+}
+
+.manage .h2 {
+    margin-top: 140px;
+}
+
+.panel {
+    margin-top: 40px;
+}

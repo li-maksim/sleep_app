@@ -1,0 +1,134 @@
+.panel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.panel .panel_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel_column:nth-child(2) {
+    transform: translateY(140px);
+}
+
+.panel_column:nth-child(3) {
+    transform: translateY(280px);
+}
+
+.panel .panel_column .panel_card {
+    display: block;
+    position: relative;
+    width: 380px;
+    height: 368px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+.panel .panel_column .panel_card .h3 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.panel .panel_column .panel_card .p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    max-width: 300px;
+}
+
+.panel .panel_column .panel_card .panel_img {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: inherit;
+}
+
+/* Borders for cards */
+
+.panel_card:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    height: 100%;
+    width: 50%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #ECB2AD 20%, #9A5DB8 80%);
+    border-radius: inherit;
+}
+
+.panel_card:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -3px;
+    height: 100%;
+    width: 50%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #ECB2AD 20%, #9A5DB8 80%);
+    border-radius: inherit;
+}
+
+.panel_card:hover::before {
+    height: 102%;
+    width: 102%;
+    top: -3px;
+    height: -3px;
+}
+
+/* Empty cards created with pseudo elements */
+
+.panel_column:first-child .panel_card:last-child::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-color: inherit;
+    background: linear-gradient(to bottom, #262626, var(--bg-color) 70%);
+    border-radius: inherit;
+}
+
+.panel_column:nth-child(2) .panel_card:last-child::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background: linear-gradient(to bottom, #262626, var(--bg-color) 70%);
+    border-radius: inherit;
+}
+
+.panel_column:nth-child(2) .panel_card:first-child::after {
+    content: '';
+    position: absolute;
+    top: calc(-100% - 20px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -12;
+    background: linear-gradient(to top, #262626, var(--bg-color) 70%);
+    border-radius: inherit;
+}
+
+.panel_column:last-child .panel_card:first-child::after {
+    content: '';
+    position: absolute;
+    top: calc(-100% - 20px);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -12;
+    background: linear-gradient(to top, #262626, var(--bg-color) 70%);
+    border-radius: inherit;
+}
