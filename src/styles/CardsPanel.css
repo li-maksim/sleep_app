@@ -18,19 +18,6 @@
     transform: translateY(280px);
 }
 
-.panel .panel_column .panel_card {
-    display: block;
-    position: relative;
-    width: 380px;
-    height: 368px;
-    background-color: #262626;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-}
-
-
 .panel .panel_column .panel_card .h3 {
     margin-top: 40px;
     margin-bottom: 0;
@@ -43,7 +30,7 @@
     max-width: 300px;
 }
 
-.panel .panel_column .panel_card .panel_img {
+.panel .panel_column .panel_card .card_img {
     max-width: 300px;
     margin-top: 20px;
     border-radius: inherit;

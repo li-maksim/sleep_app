@@ -1,4 +1,5 @@
 import '../styles/CardsPanel.css'
+import Card from './Card'
 import dog from '../assets/dog.jpg'
 import hedgehog from '../assets/hedgehog.jpg'
 import fox from '../assets/fox.jpg'
@@ -12,40 +13,16 @@ function CardsPanel() {
     return(
         <div className="panel">
             <div className="panel_column">
-                <div className="panel_card">
-                    <h3 className="h3">90%</h3>
-                    <p className="p">Wake up refreshed and alert</p>
-                    <img src={dog} alt="Sleeping puppy" className="panel_img" />
-                </div>
-                <div className="panel_card">
-                    <h3 className="h3">Relaxation</h3>
-                    <p className="p">Find meditation sessions for any mood</p>
-                    <img src={hedgehog} alt="Sleeping hedgehog" className="panel_img" />
-                </div>
+                <Card type="panel" title="90%" descr="Wake up refreshed and alert" img={dog} altText="Sleeping puppy"></Card>
+                <Card type="panel" title="Relaxation" descr="Find meditation sessions for any mood" img={hedgehog} altText="Sleeping hedgehog"></Card>
             </div>
             <div className="panel_column">
-                <div className="panel_card">
-                    <h3 className="h3">50 000+</h3>
-                    <p className="p">Use SleepApp to sleep better</p>
-                    <img src={fox} alt="Sleeping fox cub" className="panel_img" />
-                </div>
-                <div className="panel_card">
-                    <h3 className="h3">Tranquillity</h3>
-                    <p className="p">Explore collections of SleepApp playlists</p>
-                    <img src={kitten1} alt="Sleeping kitten" className="panel_img" />
-                </div>
+                <Card type="panel" title="50 000+" descr="Use SleepApp to sleep better" img={fox} altText="Sleeping fox cub"></Card>
+                <Card type="panel" title="Tranquillity" descr="Explore collections of SleepApp playlists" img={kitten1} altText="Sleeping kitten"></Card>
             </div>
             <div className="panel_column">
-                <div className="panel_card">
-                    <h3 className="h3">85%</h3>
-                    <p className="p">Feel less anxiety and stress</p>
-                    <img src={kitten2} alt="Anothersleeping kitten" className="panel_img" />
-                </div>
-                <div className="panel_card">
-                    <h3 className="h3">Personalization</h3>
-                    <p className="p">Make your own mix for better experience</p>
-                    <img src={bunny} alt="Sleeping bunny" className="panel_img" />
-                </div>
+                <Card type="panel" title="85%" descr="Feel less anxiety and stress" img={kitten2} altText="Anothersleeping kitten"></Card>
+                <Card type="panel" title="Personalization" descr="Make your own mix for better experience" img={bunny} altText="Sleeping bunny"></Card>
             </div>
         </div>
     )

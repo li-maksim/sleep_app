@@ -41,11 +41,11 @@
 }
 
 .left {
-    animation: slideshowLeft 30s linear infinite;
+    animation: slideshowLeft 40s linear infinite;
 }
 
 .right {
-    animation: slideshowRight 30s linear infinite;
+    animation: slideshowRight 40s linear infinite;
 }
 
 .icon_slider .icons .icon {
@@ -79,6 +79,10 @@
 
 .icon_slider .icons .icon.alt_color {
     background-color: var(--icon-alt-color);
+}
+
+.icon_slider .icons .icon:hover {
+    background-color: var(--btn-alt-color);
 }
 
 .icon_slider:hover .left, .icon_slider:hover .right {
