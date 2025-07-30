@@ -1,0 +1,112 @@
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: repeat(3, 227px);
+    gap: 20px;
+    row-gap: 20px;
+    align-content: end;
+}
+
+.masonry .card_wrapper {
+    width: 380px;
+    height: 227px;
+}
+
+.masonry .masonry_card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 40px 40px 0px 40px;
+    align-items: start;
+}
+
+.masonry .masonry_card .h3 {
+    color: var(--card-header-color);
+    margin: 0;
+    font-size: 26px;
+}
+
+.masonry .masonry_card .p {
+    margin-top: 16px;
+    color: var(--text-alt-color);
+}
+
+/* hovers */
+
+.masonry_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    height: 100%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #ECB2AD 20%, #9A5DB8 80%);
+    border-radius: inherit;
+}
+
+.masonry_card:hover .h3 {
+    color: var(--text-hover-color);
+}
+
+.masonry_card:hover .p {
+    color: var(--icon-alt-color);
+}
+
+.masonry_card:hover::before {
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+}
+
+.masonry .horizontal {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 21px 125px;
+    gap: 24px;
+    row-gap: 16px;
+}
+
+.masonry .horizontal .card_img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.masonry .horizontal .h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.masonry .horizontal .p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* general layout */
+
+.masonry .card_wrapper:nth-child(2) {
+    height: 415px;
+    transform: translateY(-188px);
+}
+
+.masonry .card_wrapper:nth-child(3) {
+    height: 202px;
+    transform: translateY(-118px);
+}
+
+.masonry .card_wrapper:nth-child(6) {
+    height: 365px;
+    transform: translateY(-138px);
+}
+
+.masonry .card_wrapper:nth-child(7) {
+    grid-column: 1 / 3;
+    width: 712px;
+    height: 252px;
+}
+
+.masonry .card_wrapper:nth-child(8) {
+    width: 444px;
+    height: 252px;
+    transform: translateX(-64px);
+}

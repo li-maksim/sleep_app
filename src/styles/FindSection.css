@@ -1,0 +1,9 @@
+.find {
+    position: relative;
+    z-index: 2;
+    margin-top: 400px;
+}
+
+.masonry {
+    margin-top: 228px;
+}

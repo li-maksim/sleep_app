@@ -1,5 +1,4 @@
 .card {
-    display: block;
     position: relative;
     width: 380px;
     height: 368px;
@@ -8,4 +7,9 @@
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+}
+
+.card_img {
+    max-width: 300px;
+    border-radius: inherit;
 }

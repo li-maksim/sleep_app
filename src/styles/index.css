@@ -4,6 +4,7 @@
   font-family: 'Kufam', sans-serif;
   --bg-color: #141414;
   --text-color: #FFFFFF;
+  --text-alt-color: #E1E1E1;
   --text-hover-color: #FEBB5B;
   --btn-color: #9A5DB8;
   --btn-color-focus: #B87BD6;
@@ -12,6 +13,7 @@
   --btn-alt-color-focus: #FFD979;
   --btn-alt-color-click: #E09D3D;
   --icon-alt-color: #ECB2AD;
+  --card-header-color: #CC99B2;
   color: var(--text-color);
 }
 
