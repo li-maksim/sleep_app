@@ -60,13 +60,6 @@
     border-radius: inherit;
 }
 
-.panel_card:hover::before {
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    top: -2px;
-    left: -2px;
-}
-
 /* Empty cards created with pseudo elements */
 
 .panel_column:first-child .panel_card:last-child::after {

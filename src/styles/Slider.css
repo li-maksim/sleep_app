@@ -1,4 +1,4 @@
-.icon_slider {
+.slider {
     position: relative;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     white-space: nowrap;
 }
 
-.icon_slider::before {
+.slider::before {
     content: '';
     position: absolute;
     top: 0;
@@ -20,7 +20,7 @@
     background: linear-gradient(to right, var(--bg-color), transparent)
 }
 
-.icon_slider::after {
+.slider::after {
     content: '';
     position: absolute;
     top: 0;
@@ -31,7 +31,7 @@
     background: linear-gradient(to right, transparent, var(--bg-color))
 }
 
-.icon_slider .icons {
+.slider .slider_elements {
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@
     animation: slideshowRight 40s linear infinite;
 }
 
-.icon_slider .icons .icon {
+.slider .slider_elements .icon {
     position: relative;
     width: 80px;
     height: 80px;
@@ -59,33 +59,33 @@
     background-color: var(--btn-color);
 }
 
-.icon_slider .icons .icon .icon_title {
+.slider .slider_elements .icon .icon_title {
     position: absolute;
     top: -30px;
     visibility: hidden;
 }
 
-.icon_slider .icons .icon:hover .icon_title {
+.slider .slider_elements .icon:hover .icon_title {
     visibility: visible;
 }
 
-.icon_slider .icons .icon:last-child {
+.slider .slider_elements .icon:last-child {
     margin-right: 120px;
 }
 
-.icon_slider .icons .icon img {
+.slider .slider_elements .icon img {
     height: 50px;
 }
 
-.icon_slider .icons .icon.alt_color {
+.slider .slider_elements .icon.alt_color {
     background-color: var(--icon-alt-color);
 }
 
-.icon_slider .icons .icon:hover {
+.slider .slider_elements .icon:hover {
     background-color: var(--btn-alt-color);
 }
 
-.icon_slider:hover .left, .icon_slider:hover .right {
+.slider:hover .left, .slider:hover .right {
     animation-play-state: paused;
 }
 

@@ -14,6 +14,7 @@
   --btn-alt-color-click: #E09D3D;
   --icon-alt-color: #ECB2AD;
   --card-header-color: #CC99B2;
+  --card-bg-color: #262626;
   color: var(--text-color);
 }
 

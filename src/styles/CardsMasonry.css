@@ -52,13 +52,6 @@
     color: var(--icon-alt-color);
 }
 
-.masonry_card:hover::before {
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    top: -2px;
-    left: -2px;
-}
-
 .masonry .horizontal {
     display: grid;
     grid-template-columns: auto;

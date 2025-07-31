@@ -4,6 +4,7 @@ import Home from './Home'
 import CollectionSection from './CollectionSection'
 import ManageSection from './ManageSection'
 import FindSection from './FindSection'
+import ReviewsSection from './ReviewsSection'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <CollectionSection />
       <ManageSection />
       <FindSection />
+      <ReviewsSection />
     </>
   )
 }

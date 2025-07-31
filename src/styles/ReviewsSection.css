@@ -1,0 +1,32 @@
+.reviews {
+    margin-top: 140px;
+}
+
+.reviews .slider {
+    height: 217px;
+    gap: 20px;
+}
+
+.reviews .slider .slider_elements {
+    gap: 20px;
+}
+
+.reviews .slider:before, .reviews .slider:after {
+    height: 217px;
+}
+
+.reviews .slider .review_block {
+    width: 380px;
+    height: 217px;
+    background-color: var(--card-bg-color);
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .slider .review_block .review_descr {
+    text-wrap: wrap;
+    font-size: 18px;
+}
