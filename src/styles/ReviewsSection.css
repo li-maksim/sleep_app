@@ -2,7 +2,17 @@
     margin-top: 140px;
 }
 
+.reviews .p {
+    margin-top: 40px;
+}
+
+.reviews .main_text {
+    max-width: 100%;
+    text-align: center;
+}
+
 .reviews .slider {
+    margin-top: 40px;
     height: 217px;
     gap: 20px;
 }
@@ -24,9 +34,25 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .reviews .slider .review_block .review_descr {
     text-wrap: wrap;
     font-size: 18px;
+    min-height: 100px;
+    margin: 0;
+}
+
+.reviews .slider .review_block .review_name {
+    margin: 0;
+    text-align: right;
+}
+
+.reviews .stars {
+    display: flex;
+    gap: 4px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 136px;
 }

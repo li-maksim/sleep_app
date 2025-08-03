@@ -16,10 +16,9 @@ function ReviewsSection() {
     return (
         <div className="section reviews">
             <div className="container">
-                <h2 className="h2">Our mission is to change your life</h2>
+                <h2 className="h2">Our mission is to <span className="orange_text">change your life</span></h2>
                 <div className="p main_text">More than 50,000 people enjoy our app and live a full life. Read why they love it and join in</div>
-            </div>
-            <Slider direction="left">
+                <Slider direction="left">
                 <div className="review_block">
                     <div className="p review_descr">«Highly recommend it to anyone looking to improve their sleep!»</div>
                     <p className="review_name">Oliver Bennett</p>
@@ -40,11 +39,12 @@ function ReviewsSection() {
                     <div className="p review_descr">«Combining gentle rain with soft piano music has become my go-to for relaxation»</div>
                     <p className="review_name">Ann Lively</p>
                 </div>
-            </Slider>
-            <div className="stars">
-                {stars}
+                </Slider>
+                <div className="stars">
+                    {stars}
+                </div>
+                <div className="p main_text">One of the top rated healthcare apps</div>
             </div>
-            <div className="p">One of the top rated healthcare apps</div>
         </div>
     )
 }

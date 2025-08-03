@@ -14,7 +14,7 @@
     border-radius: inherit;
 }
 
-.card:hover::before {
+.card_wrapper:hover .card::before {
     height: calc(100% + 4px);
     width: calc(100% + 4px);
     top: -2px;

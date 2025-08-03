@@ -36,7 +36,7 @@
 
 /* Borders for cards */
 
-.panel_card:nth-child(odd)::before {
+.card_wrapper:nth-child(odd) .panel_card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -48,7 +48,7 @@
     border-radius: inherit;
 }
 
-.panel_card:nth-child(even)::before {
+.card_wrapper:nth-child(even) .panel_card::before {
     content: '';
     position: absolute;
     top: 0;
