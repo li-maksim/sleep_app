@@ -1,7 +1,7 @@
 .card {
     position: relative;
     width: 380px;
-    height: 368px;
+    min-height: 368px;
     background-color: var(--card-bg-color);
     display: flex;
     flex-direction: column;

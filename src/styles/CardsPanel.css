@@ -18,9 +18,14 @@
     transform: translateY(280px);
 }
 
+.panel .panel_column .card {
+    min-height: 368px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
 .panel .panel_column .panel_card .h3 {
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 26px;
 }
 
@@ -28,6 +33,7 @@
     margin-top: 20px;
     margin-bottom: 0;
     max-width: 300px;
+    text-align: center;
 }
 
 .panel .panel_column .panel_card .card_img {

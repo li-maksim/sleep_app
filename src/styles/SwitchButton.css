@@ -1,0 +1,32 @@
+.switcher {
+    margin: 0 auto;
+    width: 249px;
+    height: 69px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    border: 1px solid var(--text-alt-color);
+    align-items: center;
+}
+
+.switcher .switch_btn {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    width: 77px;
+    height: 37px;
+    border-radius: 20px;
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.switcher .switch_btn.active {
+    width: 111px;
+    background-color: var(--text-hover-color);
+}
