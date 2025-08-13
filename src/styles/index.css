@@ -15,6 +15,7 @@
   --icon-alt-color: #ECB2AD;
   --card-header-color: #CC99B2;
   --card-bg-color: #262626;
+  --card-translucent: rgba(115, 115, 115, 0.1);
   color: var(--text-color);
 }
 

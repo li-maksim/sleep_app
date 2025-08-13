@@ -1,0 +1,32 @@
+.faq .faq_content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faq .faq_content .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq .img {
+    border-radius: 20px;
+    margin: 0;
+    width: 380px;
+    height: 306px;
+}
+
+.faq .faq_content .contacts .p {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.faq .faq_content .contacts .btn {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+    height: 50px;
+    margin-top: 8px;
+}

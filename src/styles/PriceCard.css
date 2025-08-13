@@ -1,7 +1,7 @@
 .price_card {
     width: 480px;
     height: 433px;
-    background-color: rgba(115, 115, 115, 0.1);
+    background-color: var(--card-translucent);
     border-radius: 5%;
     box-sizing: border-box;
     padding: 46px 40px 46px 40px;

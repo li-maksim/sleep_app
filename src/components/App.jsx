@@ -6,6 +6,7 @@ import ManageSection from './ManageSection'
 import FindSection from './FindSection'
 import ReviewsSection from './ReviewsSection'
 import PriceSection from './PriceSection'
+import FAQSection from './FAQSection'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <FindSection />
       <ReviewsSection />
       <PriceSection price={4.99}/>
+      <FAQSection />
     </>
   )
 }
