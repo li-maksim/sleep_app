@@ -7,6 +7,7 @@ import FindSection from './FindSection'
 import ReviewsSection from './ReviewsSection'
 import PriceSection from './PriceSection'
 import FAQSection from './FAQSection'
+import SubscribeSection from './SubscribeSection'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <ReviewsSection />
       <PriceSection price={4.99}/>
       <FAQSection />
+      <SubscribeSection />
     </>
   )
 }

@@ -1,0 +1,63 @@
+.subscribe {
+    margin-top: 160px;
+}
+
+.subscribe .content {
+    width: 1180px;
+    height: 563px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+.content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../assets/squirrel.jpg') no-repeat center / cover;
+    border-radius: inherit;
+    filter: blur(45px);
+    z-index: -2;
+}
+
+.subscribe .content .h2 {
+    margin: 0;
+}
+
+
+.subscribe .content .p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subscribe .content .form_wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subscribe .content .form_wrapper .img {
+    border-radius: 20px;
+}
+
+.subscribe .content .form_wrapper .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe .content .form_wrapper .form .input:nth-child(2) {
+    margin-top: 20px;
+}
+
+.subscribe .content .form_wrapper .form .checkbox_wrapper {
+    margin-top: 5px;
+}
+
+.subscribe .content .form_wrapper .form .btn {
+    margin-top: 20px;
+    width: 520px;
+}

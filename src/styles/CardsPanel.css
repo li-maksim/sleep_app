@@ -82,7 +82,7 @@
     pointer-events: none;
 }
 
-.panel_column:nth-child(2) .panel_card:last-child::after {
+.panel_column:nth-child(2) .card_wrapper:last-child .panel_card::after {
     content: '';
     position: absolute;
     top: calc(100% + 20px);
@@ -95,7 +95,7 @@
     pointer-events: none;
 }
 
-.panel_column:nth-child(2) .panel_card:first-child::after {
+.panel_column:nth-child(2) .card_wrapper:first-child .panel_card::after {
     content: '';
     position: absolute;
     top: calc(-100% - 20px);
