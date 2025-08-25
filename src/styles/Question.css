@@ -19,8 +19,8 @@
 }
 
 .question:hover::before {
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
     top: -2px;
     left: -2px;
 }
@@ -39,7 +39,9 @@
 
 .top {
     display: flex;
-    height: 50px;
+    box-sizing: border-box;
+    padding-top: 3px;
+    min-height: 50px;
     gap: 20px;
     align-items: center;
     cursor: pointer;

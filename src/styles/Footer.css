@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 274px;
+    height: 90px;
+    margin-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .copyright .copyright_title {
+    font-size: 26px;
+    color: var(--icon-alt-color);
+    font-weight: 700;
+}
+
+.footer .copyright .copyright_text {
+    margin-top: 20px;
+    color: #AFAFAF;
+    font-size: 14px;
+}
+
+.footer .links .link .link_descr {
+    margin-top: 25px;
+}
+
+.footer .links .policies {
+    margin-top: 15px;
+    display: flex;
+    gap: 40px;
+}
+
+.footer .socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}

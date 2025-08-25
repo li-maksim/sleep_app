@@ -8,20 +8,27 @@ import ReviewsSection from './ReviewsSection'
 import PriceSection from './PriceSection'
 import FAQSection from './FAQSection'
 import SubscribeSection from './SubscribeSection'
+import Footer from './Footer'
 
 function App() {
 
   return (
-    <>
-      <Header />
-      <Home />
-      <CollectionSection />
-      <ManageSection />
-      <FindSection />
-      <ReviewsSection />
-      <PriceSection price={4.99}/>
-      <FAQSection />
-      <SubscribeSection />
+    < >
+    <div className="bg">
+      <div className="circle_bg"></div>
+    </div>
+      <div className="app">
+        <Header />
+        <Home />
+        <CollectionSection />
+        <ManageSection />
+        <FindSection />
+        <ReviewsSection />
+        <PriceSection price={4.99}/>
+        <FAQSection />
+        <SubscribeSection />
+        <Footer />
+    </div>
     </>
   )
 }

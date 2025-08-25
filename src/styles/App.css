@@ -1,0 +1,52 @@
+#root {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;        
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+.circle_bg {
+    width: 1920px;
+    height: 1920px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(
+      circle at top right,
+      #a24ba6 0%,
+      #422f9e 40%,
+      #12031c 100%
+    );
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -530px;
+}
+
+.circle_bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at bottom left,
+        rgba(20, 20, 20, 1) 0%,
+        rgba(20, 20, 20, 0.8) 40%,
+        transparent 100%
+    );
+}
+  
+.circle_bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: url('../assets/noise.png');
+    background-size: 256px 256px; /* tile size */
+    opacity: 0.25; /* adjust grain intensity */
+    mix-blend-mode: overlay;
+}

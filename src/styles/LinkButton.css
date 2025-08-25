@@ -1,10 +1,21 @@
-.link_btn {
+.link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link_btn, .link_descr {
     text-decoration: none;
     font-size: 18px;
     line-height: 140%;
     transition: 0.4s;
 }
 
-.link_btn:hover {
+.link_descr, .link_icon {
+    cursor: pointer;
+}
+
+.link_btn:hover, .link:hover .link_descr {
     color: var(--text-hover-color);
 }
