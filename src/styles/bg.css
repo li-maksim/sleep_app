@@ -1,0 +1,189 @@
+#root {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;        
+    overflow: hidden; 
+    pointer-events: none;
+}
+
+/* Home Section */
+
+.bg_big_circle {
+    width: 1920px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(
+      circle at top right,
+      #a24ba6 0%,
+      #422f9e 40%,
+      #12031c 100%
+    );
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -530px;
+}
+
+.bg_big_circle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at bottom left,
+        rgba(20, 20, 20, 1) 0%,
+        rgba(20, 20, 20, 0.8) 25%,
+        transparent 100%
+    );
+}
+  
+.bg_big_circle::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: url('../assets/noise.png');
+    background-size: 256px 256px; /* tile size */
+    opacity: 0.25; /* adjust grain intensity */
+    mix-blend-mode: overlay;
+}
+
+.bg_circle {
+    width: 254px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+.pink_circle {
+    transform: translateX(-699px);
+    top: 90px;
+    background: radial-gradient(circle at 30% 20%, rgba(200, 150, 255, 0.8), transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 180, 200, 0.8), transparent 60%),
+                radial-gradient(circle at 40% 70%, rgba(255, 200, 230, 0.7), transparent 60%),
+                radial-gradient(circle at 60% 60%, rgba(255, 255, 255, 0.9), transparent 70%),
+                #f6d9e8;
+    box-shadow: inset 0 0 40px rgba(255,255,255,0.3);
+    z-index: 2;
+  }
+
+.pink_circle:last-child {
+    width: 438px;
+    top: -20px;
+    transform: translateX(690px);
+}
+
+.blue_circle {
+    width: 516px;
+    background:
+    radial-gradient(65% 65% at 90% 10%,
+      #b700d7 0%,
+      rgba(183,0,215,.65) 35%,
+      rgba(183,0,215,0) 60%),
+    radial-gradient(60% 60% at 10% 80%,
+      #aeb7ff 0%,
+      rgba(174,183,255,.6) 40%,
+      rgba(174,183,255,0) 70%),
+    radial-gradient(60% 60% at 50% 55%,
+      #3b1aa6 0%,
+      rgba(59,26,166,.5) 30%,
+      rgba(59,26,166,0) 65%),
+    radial-gradient(100% 100% at 50% 50%,
+      #1b1458 0%,
+      #241170 45%,
+      #10073f 100%);
+    filter: blur(2px);
+    z-index: 1;
+    top: 40px;
+    transform: translateX(-840px);
+}
+
+.blue_circle:nth-child(2) {
+    width: 923px;
+    top: -340px;
+    transform: translateX(220px);
+}
+
+.blue_circle:last-child {
+    width: 417px;
+    top: 380px;
+    transform: translateX(-1200px);
+    z-index: 0;
+}
+
+.red_circle {
+    width: 328px;
+    top: 2px;
+    transform: translateX(-940px);
+    background: radial-gradient(circle at -90% 90%,#bc3b84, transparent 90%),
+    radial-gradient(circle at center,#d28ff9, #bc3b84 90%),
+    radial-gradient(circle at 90% 90%,#fe6f6c, #bc3b84 90%);
+}
+
+.red_circle:nth-child(2) {
+    width: 235px;
+    top: 440px;
+}
+
+.red_circle:last-child {
+    width: 449px;
+    top: 700px;
+    transform: translateX(760px);
+}
+
+.bg_home_wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 991px;
+    background: rgba(0, 0, 0, 0.28);
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 75.68%, 1.43% 74.56%, 2.86% 73.44%, 4.29% 72.34%, 5.71% 71.25%, 7.14% 70.19%, 8.57% 69.15%, 10.00% 68.15%, 11.43% 67.18%, 12.86% 66.26%, 14.29% 65.39%, 15.71% 64.57%, 17.14% 63.81%, 18.57% 63.11%, 20.00% 62.48%, 21.43% 61.91%, 22.86% 61.41%, 24.29% 60.99%, 25.71% 60.64%, 27.14% 60.37%, 28.57% 60.18%, 30.00% 60.07%, 31.43% 60.04%, 32.86% 60.09%, 34.29% 60.22%, 35.71% 60.43%, 37.14% 60.72%, 38.57% 61.09%, 40.00% 61.53%, 41.43% 62.04%, 42.86% 62.63%, 44.29% 63.28%, 45.71% 64.00%, 47.14% 64.77%, 48.57% 65.60%, 50.00% 66.49%, 51.43% 67.42%, 52.86% 68.39%, 54.29% 69.41%, 55.71% 70.45%, 57.14% 71.52%, 58.57% 72.61%, 60.00% 73.72%, 61.43% 74.84%, 62.86% 75.96%, 64.29% 77.08%, 65.71% 78.20%, 67.14% 79.30%, 68.57% 80.38%, 70.00% 81.44%, 71.43% 82.47%, 72.86% 83.46%, 74.29% 84.41%, 75.71% 85.32%, 77.14% 86.18%, 78.57% 86.99%, 80.00% 87.73%, 81.43% 88.42%, 82.86% 89.04%, 84.29% 89.59%, 85.71% 90.06%, 87.14% 90.47%, 88.57% 90.79%, 90.00% 91.04%, 91.43% 91.22%, 92.86% 91.31%, 94.29% 91.32%, 95.71% 91.25%, 97.14% 91.09%, 98.57% 90.86%, 100.00% 90.56%);
+    backdrop-filter: blur(22px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Manage Section */
+
+.bg_manage .light_blue_circle {
+    background: radial-gradient(circle at 30% 30%, 
+    #9a8cd9, 
+    #5a3ba6, 
+    #2a1b5f, 
+    #800080);
+    width: 479px;
+    top: 2350px;
+    transform: translateX(-1180px);
+}
+
+.bg_manage .bg_big_circle {
+    width: 1185px;
+    top: 2270px;
+    transform: translateX(500px);
+    z-index: 1;
+}
+
+.bg_manage .yellow_circle {
+    background: radial-gradient(circle at 30% 30%, 
+    #FFDE82, 
+    #FFBC4F, 
+    #EA9A8A);
+    width: 597px;
+    top: 2590px;
+    transform: translateX(700px);
+    z-index: 2;
+}
+
+.bg_manage .red_circle {
+    width: 191px;
+    top: 2820px;
+    transform: translateX(650px);
+    z-index: 3;
+}

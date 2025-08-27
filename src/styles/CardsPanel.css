@@ -108,7 +108,7 @@
     pointer-events: none;
 }
 
-.panel_column:last-child .panel_card:first-child::after {
+.panel_column:last-child .card_wrapper:first-child .panel_card::after {
     content: '';
     position: absolute;
     top: calc(-100% - 20px);
