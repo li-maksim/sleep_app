@@ -1,3 +1,7 @@
+.faq {
+    margin-top: 180px;
+}
+
 .faq .faq_content {
     display: flex;
     justify-content: center;

@@ -15,7 +15,22 @@ function App() {
   return (
     < >
     <div className="bg">
-      <div className="circle_bg"></div>
+        <div className="bg_big_circle"></div>
+        <div className="bg_pink_circles">
+          <div className="bg_circle pink_circle"></div>
+          <div className="bg_circle pink_circle"></div>
+        </div>
+        <div className="bg_blue_circles">
+          <div className="bg_circle blue_circle"></div>
+          <div className="bg_circle blue_circle"></div>
+          <div className="bg_circle blue_circle"></div>
+        </div>
+        <div className="bg_red_circles">
+          <div className="bg_circle red_circle"></div>
+          <div className="bg_circle red_circle"></div>
+          <div className="bg_circle red_circle"></div>
+        </div>
+        <div className="bg_wave"></div>
     </div>
       <div className="app">
         <Header />
