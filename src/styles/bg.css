@@ -48,8 +48,8 @@
     inset: 0;
     border-radius: 50%;
     background: url('../assets/noise.png');
-    background-size: 256px 256px; /* tile size */
-    opacity: 0.25; /* adjust grain intensity */
+    background-size: 256px 256px;
+    opacity: 0.25;
     mix-blend-mode: overlay;
 }
 
@@ -152,7 +152,7 @@
 
 /* Manage Section */
 
-.bg_manage .light_blue_circle {
+.light_blue_circle {
     background: radial-gradient(circle at 30% 30%, 
     #9a8cd9, 
     #5a3ba6, 
@@ -163,6 +163,17 @@
     transform: translateX(-1180px);
 }
 
+.light_blue_circle::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: url('../assets/noise.png');
+    background-size: 128px 128px;
+    opacity: 0.15;
+    mix-blend-mode: overlay;
+}
+
 .bg_manage .bg_big_circle {
     width: 1185px;
     top: 2270px;
@@ -170,14 +181,14 @@
     z-index: 1;
 }
 
-.bg_manage .yellow_circle {
+.yellow_circle {
+    width: 597px;
+    top: 2590px;
+    transform: translateX(700px);
     background: radial-gradient(circle at 30% 30%, 
     #FFDE82, 
     #FFBC4F, 
     #EA9A8A);
-    width: 597px;
-    top: 2590px;
-    transform: translateX(700px);
     z-index: 2;
 }
 
@@ -186,4 +197,46 @@
     top: 2820px;
     transform: translateX(650px);
     z-index: 3;
+}
+
+/* Find Section */
+
+.bg_find .bg_big_circle {
+    width: 1214px;
+    top: 3630px;
+    transform: translate(-1770px);
+}
+
+.bg_find .bg_big_circle::before {
+    background: radial-gradient(
+        circle at bottom right,
+        rgba(20, 20, 20, 1) 0%,
+        rgba(20, 20, 20, 0.95) 40%,
+        transparent 60%
+    );
+    z-index: 5;
+}
+
+.bg_find .white_circle {
+    width: 350px;
+    top: 4085px;
+    transform: translate(-865px);
+    background: radial-gradient(circle at 30% 30%, 
+    #E9B4B5, 
+    #A18AAC, 
+    #D29FB9);
+}
+
+.bg_find .light_blue_circle {
+    width: 440px;
+    top: 3715px;
+    transform: translateX(455px);
+    z-index: 5;
+}
+
+.bg_find .yellow_circle {
+    width: 300px;
+    top: 4600px;
+    transform: translateX(440px);
+    z-index: 5;
 }
