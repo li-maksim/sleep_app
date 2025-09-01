@@ -1,5 +1,6 @@
 .price {
     margin-top: 140px;
+    overflow: hidden;
 }
 
 .price .price_cards {
@@ -13,4 +14,28 @@
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.price_cards .price_card:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(-100% - 20px);
+    width: 480px;
+    height: 433px;
+    background-color: var(--card-translucent);
+    backdrop-filter: blur(15px);
+    border-radius: inherit;
+}
+
+.price_cards .price_card:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    width: 480px;
+    height: 433px;
+    background-color: var(--card-translucent);
+    backdrop-filter: blur(15px);
+    border-radius: inherit;
 }

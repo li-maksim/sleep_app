@@ -1,5 +1,6 @@
 import '../styles/App.css'
 import '../styles/bg.css'
+import manageBg from "../assets/glass.svg"
 import Header from './Header'
 import Home from './Home'
 import CollectionSection from './CollectionSection'
@@ -47,10 +48,11 @@ function App() {
         <div className="bg_circle yellow_circle"></div>
       </div>
       <div className="bg_price">
-        <div className="bg_cirlce yellow_circle"></div>
-        <div className="bg_cirlce light_blue_circle"></div>
+        <div className="bg_circle yellow_circle"></div>
+        <div className="bg_circle light_blue_circle"></div>
         <div className="bg_big_circle"></div>
-        <div className="bg_cirlce white_circle"></div>
+        <div className="bg_big_circle"></div>
+        <div className="bg_circle pink_circle"></div>
       </div>
       <div className="bg_subscribe">
         <div className="bg_big_circle"></div>
