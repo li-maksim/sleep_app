@@ -189,7 +189,7 @@
     #FFDE82, 
     #FFBC4F, 
     #EA9A8A);
-    z-index: 2;
+    z-index: 1;
 }
 
 .bg_manage .red_circle {
@@ -197,6 +197,14 @@
     top: 2820px;
     transform: translateX(650px);
     z-index: 3;
+}
+
+.bg_manage .wave {
+    position: absolute;
+    top: 2500px;
+    left: 0;
+    z-index: 3;
+    width: 100%;
 }
 
 /* Find Section */
@@ -234,7 +242,7 @@
     z-index: 5;
 }
 
-.yellow_circle {
+.bg_find .yellow_circle {
     width: 300px;
     top: 4600px;
     transform: translateX(440px);
@@ -272,4 +280,40 @@
     width: 347;
     top: 5960px;
     transform: translateX(660px);
+}
+
+/* Subscribe Section */
+
+.bg_subscribe .bg_big_circle {
+    width: 883px;
+    top: 6900px;
+    transform: translateX(-1300px);
+}
+
+.bg_subscribe .bg_big_circle::before {
+    background: radial-gradient(
+        circle at top right,
+        rgba(20, 20, 20, 1) 0%,
+        rgba(20, 20, 20, 0.8) 40%,
+        transparent 60%
+    );
+}
+
+.bg_subscribe .light_blue_circle {
+    width: 451px;
+    top: 7400px;
+    transform: translateX(-1150px);
+}
+
+.bg_subscribe .red_circle {
+    width: 253px;
+    top: 7260px;
+    transform: translateX(610px);
+}
+
+.bg_subscribe .yellow_circle {
+    width: 468px;
+    top: 7250px;
+    transform: translateX(700px);
+    z-index: -1;
 }

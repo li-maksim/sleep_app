@@ -1,6 +1,6 @@
 import '../styles/App.css'
 import '../styles/bg.css'
-import manageBg from "../assets/glass.svg"
+import manageBg from "../assets/glass_530px.svg"
 import Header from './Header'
 import Home from './Home'
 import CollectionSection from './CollectionSection'
@@ -40,6 +40,7 @@ function App() {
         <div className="bg_big_circle"></div>
         <div className="bg_circle yellow_circle"></div>
         <div className="bg_circle red_circle"></div>
+        <img src={manageBg} alt="" className="wave" />
       </div>
       <div className="bg_find">
         <div className="bg_circle bg_big_circle"></div>
