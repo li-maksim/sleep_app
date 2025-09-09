@@ -1,6 +1,5 @@
 import '../styles/App.css'
 import '../styles/bg.css'
-import manageBg from "../assets/glass_530px.svg"
 import Header from './Header'
 import Home from './Home'
 import CollectionSection from './CollectionSection'
@@ -11,6 +10,7 @@ import PriceSection from './PriceSection'
 import FAQSection from './FAQSection'
 import SubscribeSection from './SubscribeSection'
 import Footer from './Footer'
+import ToTopButton from './ToTopButton'
 
 function App() {
 
@@ -40,7 +40,7 @@ function App() {
         <div className="bg_big_circle"></div>
         <div className="bg_circle yellow_circle"></div>
         <div className="bg_circle red_circle"></div>
-        <img src={manageBg} alt="" className="wave" />
+        <div className="wave"></div>
       </div>
       <div className="bg_find">
         <div className="bg_circle bg_big_circle"></div>
@@ -54,12 +54,14 @@ function App() {
         <div className="bg_big_circle"></div>
         <div className="bg_big_circle"></div>
         <div className="bg_circle pink_circle"></div>
+        <div className="wave"></div>
       </div>
       <div className="bg_subscribe">
         <div className="bg_big_circle"></div>
         <div className="bg_circle light_blue_circle"></div>
         <div className="bg_circle red_circle"></div>
         <div className="bg_circle yellow_circle"></div>
+        <div className="wave"></div>
       </div>
     </div>
       <div className="app">
@@ -73,6 +75,7 @@ function App() {
         <FAQSection />
         <SubscribeSection />
         <Footer />
+        <ToTopButton />
     </div>
     </>
   )

@@ -1,0 +1,39 @@
+.to_top_btn {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 3px solid var(--text-hover-color);
+    border-radius: 15px;
+    position: fixed;
+    right: 50px;
+    bottom: 164px;
+    transition: opacity 0.7s;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.to_top_btn.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.to_top_btn .icon {
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(78%) sepia(12%) saturate(1901%) hue-rotate(345deg) brightness(100%) contrast(100%);
+}
+
+.to_top_btn:hover {
+    border-color: var(--icon-alt-color);
+}
+
+.to_top_btn:hover .icon {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(42%) saturate(2805%) hue-rotate(290deg) brightness(96%) contrast(93%);
+}
+
+.to_top_btn:active {
+    border-color: var(--btn-color);
+}
+
+.to_top_btn:active .icon {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(9%) saturate(2702%) hue-rotate(236deg) brightness(94%) contrast(97%)
+}

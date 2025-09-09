@@ -17,6 +17,7 @@
   --card-bg-color: #262626;
   --card-translucent: rgba(115, 115, 115, 0.1);
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 body {
