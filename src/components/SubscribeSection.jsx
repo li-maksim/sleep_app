@@ -30,6 +30,10 @@ function SubscribeSection() {
         return {changeName, changeEmail, changeAcceptance}
     })()
 
+    function links() {
+        return <p>I accept the <a href="#">terms and conditions</a></p>
+    }
+
     return (
         <div className="sections subscribe">
             <div className="container">
@@ -41,7 +45,7 @@ function SubscribeSection() {
                         <form action="POST" className="form">
                             <Input type="text" name="Name" val={formData.name} fn={formFns.changeName} />
                             <Input type="email" name="Email" val={formData.email} fn={formFns.changeEmail} />
-                            <Input type="checkbox" name="I accept the terms and conditions" val={formData.acceptance} fn={formFns.changeAcceptance} />
+                            <Input type="checkbox" name={links()} val={formData.acceptance} fn={formFns.changeAcceptance} />
                             <Button text="Contact us" altColor={true} />
                         </form>
                     </div>

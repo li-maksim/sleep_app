@@ -7,7 +7,7 @@ function ToTopButton() {
 
     const [showBtn, setShowBtn] = useState(false)
     function onScroll() {
-        window.scrollY > 1700 ? setShowBtn(true) : setShowBtn(false)
+        window.scrollY > 1400 ? setShowBtn(true) : setShowBtn(false)
     }
     function scrollToTop() {
         window.scrollTo(0, 0)

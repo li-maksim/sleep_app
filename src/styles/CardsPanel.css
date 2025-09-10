@@ -27,6 +27,7 @@
 .panel .panel_column .panel_card .h3 {
     margin: 0;
     font-size: 26px;
+    font-weight: 600;
 }
 
 .panel .panel_column .panel_card .p {
@@ -90,7 +91,7 @@
     height: 100%;
     width: 100%;
     z-index: -2;
-    background: linear-gradient(to bottom, #262626, var(--bg-color) 70%);
+    background: linear-gradient(to bottom, #262626, var(--bg-color) 45%);
     border-radius: inherit;
     pointer-events: none;
 }
@@ -103,7 +104,7 @@
     height: 100%;
     width: 100%;
     z-index: -12;
-    background: linear-gradient(to top, #262626, var(--bg-color) 70%);
+    background: linear-gradient(to top, #262626, var(--bg-color) 35%);
     border-radius: inherit;
     pointer-events: none;
 }

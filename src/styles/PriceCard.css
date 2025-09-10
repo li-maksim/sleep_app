@@ -17,6 +17,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 26px;
+    font-weight: 600;
 }
 
 .price_card .price_val {

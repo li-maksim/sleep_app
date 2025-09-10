@@ -29,4 +29,5 @@
 .switcher .switch_btn.active {
     width: 111px;
     background-color: var(--text-hover-color);
+    color: var(--bg-color);
 }

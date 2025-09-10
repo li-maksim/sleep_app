@@ -40,7 +40,6 @@ function App() {
         <div className="bg_big_circle"></div>
         <div className="bg_circle yellow_circle"></div>
         <div className="bg_circle red_circle"></div>
-        <div className="wave"></div>
       </div>
       <div className="bg_find">
         <div className="bg_circle bg_big_circle"></div>
@@ -54,14 +53,12 @@ function App() {
         <div className="bg_big_circle"></div>
         <div className="bg_big_circle"></div>
         <div className="bg_circle pink_circle"></div>
-        <div className="wave"></div>
       </div>
       <div className="bg_subscribe">
         <div className="bg_big_circle"></div>
         <div className="bg_circle light_blue_circle"></div>
         <div className="bg_circle red_circle"></div>
         <div className="bg_circle yellow_circle"></div>
-        <div className="wave"></div>
       </div>
     </div>
       <div className="app">

@@ -25,6 +25,11 @@
     margin-top: 25px;
 }
 
+.footer .links .link .link_descr, 
+.footer .links .policies .link_btn {
+    font-weight: 500;
+}
+
 .footer .links .policies {
     margin-top: 15px;
     display: flex;

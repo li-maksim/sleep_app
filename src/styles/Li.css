@@ -12,4 +12,14 @@
 
 .li.positive {
     background-color: rgba(115, 115, 115, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.li p {
+    box-sizing: border-box;
+    padding-top: 2px;
+}
+
+.li img {
+    margin-top: -1px;
 }

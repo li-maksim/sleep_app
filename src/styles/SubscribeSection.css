@@ -10,6 +10,7 @@
     overflow: hidden;
     z-index: 2;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 60px;
 }
 
@@ -19,7 +20,7 @@
     inset: 0;
     background: url('../assets/squirrel.jpg') no-repeat center / cover;
     border-radius: inherit;
-    filter: blur(45px);
+    filter: blur(60px) brightness(0.9) contrast(0.85);
     z-index: -2;
 }
 
@@ -27,10 +28,11 @@
     margin: 0;
 }
 
-
 .subscribe .content .p {
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
     text-align: center;
+    color: var(--text-sub-color);
 }
 
 .subscribe .content .form_wrapper {
@@ -41,6 +43,8 @@
 }
 
 .subscribe .content .form_wrapper .img {
+    width: 520px;
+    height: 243px;
     border-radius: 20px;
 }
 
@@ -51,13 +55,26 @@
 
 .subscribe .content .form_wrapper .form .input:nth-child(2) {
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .subscribe .content .form_wrapper .form .checkbox_wrapper {
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.subscribe .content .form_wrapper .form .checkbox_wrapper p {
+    margin: 0;
+    margin-top: 2px;
+    font-size: 18px;
+    color: var(--text-sub-color);
+}
+
+.subscribe .content .form_wrapper .form .checkbox_wrapper p a {
+    text-decoration: none;
+    color: var(--icon-alt-color);
 }
 
 .subscribe .content .form_wrapper .form .btn {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 520px;
 }

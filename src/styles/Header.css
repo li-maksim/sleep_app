@@ -22,7 +22,7 @@ header {
 }
 
 header.with_bg {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(20, 20, 20, 0.7);
     backdrop-filter: blur(30px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
