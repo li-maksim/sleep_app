@@ -1,4 +1,5 @@
 import '../styles/CollectionSection.css'
+import { useRef } from 'react'
 import Slider from './Slider'
 const svgModules = import.meta.glob('../assets/icons/slider/*.svg', {
     eager: true,
@@ -11,7 +12,7 @@ return { src, text: fileName };
 })
 
 
-function CollectionSection() {
+function CollectionSection({ref}) {
 
     const rowOfIcons = icons.map((e, i) => {
         const arr = e.text.split('')
@@ -35,7 +36,7 @@ function CollectionSection() {
     return (
         <section className="section collection">
             <div className="container">
-                <h2 className="h2">
+                <h2 ref={ref} className="h2">
                     Collection of soothing sounds <span className="purple_text">based on somnology studies</span>
                 </h2>
                 <p className="p main_text">

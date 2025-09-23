@@ -2,7 +2,7 @@ import Button from './Button'
 import img from '../assets/iphone_homepage.png'
 import '../styles/Home.css'
 
-function Home() {
+function Home({ btnFn }) {
 
     return (
         <section className="section home">
@@ -12,7 +12,7 @@ function Home() {
                 <div className="home_img_wrapper">
                     <img className="img home_img" src={img} alt="iPhone 15 image" />
                 </div>
-                <Button text="Learn more" />
+                <Button text="Learn more" fn={btnFn} />
             </div>
         </section>
     )

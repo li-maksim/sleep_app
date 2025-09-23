@@ -31,7 +31,7 @@ function SubscribeSection() {
     })()
 
     function links() {
-        return <p>I accept the <a href="#">terms and conditions</a></p>
+        return <span>I accept the <a href="#">terms and conditions</a></span>
     }
 
     return (

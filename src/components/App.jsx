@@ -1,5 +1,6 @@
 import '../styles/App.css'
 import '../styles/bg.css'
+import { useRef } from 'react'
 import Header from './Header'
 import Home from './Home'
 import CollectionSection from './CollectionSection'
@@ -13,6 +14,15 @@ import Footer from './Footer'
 import ToTopButton from './ToTopButton'
 
 function App() {
+
+  const h2Ref = useRef(null)
+
+  function scrollToH2() {
+    if (h2Ref.current) {
+      console.log('yup')
+      h2Ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  } 
 
   return (
     < >
@@ -63,8 +73,8 @@ function App() {
     </div>
       <div className="app">
         <Header />
-        <Home />
-        <CollectionSection />
+        <Home btnFn={scrollToH2} />
+        <CollectionSection ref={h2Ref} />
         <ManageSection />
         <FindSection />
         <ReviewsSection />
