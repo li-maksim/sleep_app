@@ -39,3 +39,15 @@
     backdrop-filter: blur(15px);
     border-radius: inherit;
 }
+
+/* mobile */
+
+@media (max-width: 980px) {
+    .price_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price_cards .price_card::before {
+        display: none;
+    }
+}

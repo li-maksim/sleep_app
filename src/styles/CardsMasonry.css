@@ -5,6 +5,7 @@
     gap: 20px;
     row-gap: 20px;
     align-content: end;
+    place-content: center;
 }
 
 .masonry .card_wrapper {
@@ -17,7 +18,7 @@
     width: 100%;
     min-height: auto;
     height: 100%;
-    padding: 40px 40px 0px 40px;
+    padding: 40px;
     align-items: start;
 }
 
@@ -31,27 +32,6 @@
 .masonry .masonry_card .p {
     margin-top: 16px;
     color: var(--text-alt-color);
-}
-
-/* hovers */
-
-.masonry_card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -3px;
-    height: 100%;
-    z-index: -2;
-    background-image: linear-gradient(to bottom, #ECB2AD 20%, #9A5DB8 80%);
-    border-radius: inherit;
-}
-
-.masonry_card:hover .h3 {
-    color: var(--text-hover-color);
-}
-
-.masonry_card:hover .p {
-    color: var(--icon-alt-color);
 }
 
 .masonry .horizontal {
@@ -75,6 +55,27 @@
 .masonry .horizontal .p {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+/* hovers */
+
+.masonry_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    height: 100%;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #ECB2AD 20%, #9A5DB8 80%);
+    border-radius: inherit;
+}
+
+.masonry_card:hover .h3 {
+    color: var(--text-hover-color);
+}
+
+.masonry_card:hover .p {
+    color: var(--icon-alt-color);
 }
 
 /* general layout */
@@ -102,6 +103,48 @@
 
 .masonry .card_wrapper:nth-child(8) {
     width: 444px;
-    height: 252px;
+    min-height: 252px;
     transform: translateX(-64px);
+}
+
+/* mobile */
+
+@media (max-width: 1200px) {
+    .masonry {
+        grid-template-columns: repeat(2, 380px);
+    }
+
+    .find .masonry .card_wrapper {
+        transform: translate(0, 0);
+    }
+
+    .find .masonry .card_wrapper:first-child,
+    .find .masonry .card_wrapper:nth-child(3) {
+        transform: translateY(45px);
+    }
+
+    .find .masonry .card_wrapper:nth-child(4),
+    .find .masonry .card_wrapper:nth-child(6) {
+        transform: translateY(190px);
+    }
+
+    .find .masonry .card_wrapper:nth-child(5) {
+        margin-top: 0;
+        transform: translateY(20px);
+    }
+
+    .find .masonry .card_wrapper:nth-child(7) {
+        width: 100%;
+        transform: translateY(330px);
+    }
+
+    .find .masonry .card_wrapper:last-child {
+        width: 380px;
+        height: fit-content;
+        transform: translateY(-250px);
+    }
+
+    .masonry .horizontal {
+        gap: 40px;
+    }
 }

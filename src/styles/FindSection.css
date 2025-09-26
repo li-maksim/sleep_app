@@ -7,3 +7,15 @@
 .masonry {
     margin-top: 228px;
 }
+
+/* mobile */
+
+@media (max-width: 1179px) {
+    .find {
+        margin-top: -200px;
+    }
+
+    .masonry {
+        margin-top: 28px;
+    }
+}

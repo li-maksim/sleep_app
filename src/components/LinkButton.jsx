@@ -1,6 +1,6 @@
 import '../styles/LinkButton.css'
 
-function LinkButton({text, fn, icon = false, to}) {
+function LinkButton({text, fn = () => {return}, icon = false, to}) {
 
     function handleClick(e) {
         e.preventDefault()

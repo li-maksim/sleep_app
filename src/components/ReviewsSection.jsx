@@ -17,7 +17,7 @@ function ReviewsSection() {
         <div className="section reviews">
             <div className="container">
                 <h2 className="h2">Our mission is to <span className="orange_text">change your life</span></h2>
-                <div className="p main_text">More than 50,000 people enjoy our app and live a full life. Read why they love it and join in</div>
+                <div className="p main_text">More than 50,000 people enjoy our app and live a full life. Read why they love it and join in.</div>
                 <Slider direction="left">
                 <div className="review_block">
                     <div className="p review_descr">«Highly recommend it to anyone looking to improve their sleep!»</div>

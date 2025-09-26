@@ -17,8 +17,8 @@
 .faq .img {
     border-radius: 20px;
     margin: 0;
-    width: 380px;
-    height: 306px;
+    max-width: 380px;
+    max-height: 306px;
 }
 
 .faq .faq_content .contacts .p {
@@ -30,7 +30,22 @@
 .faq .faq_content .contacts .btn {
     display: block;
     margin: 0 auto;
-    width: 380px;
+    max-width: 380px;
     height: 50px;
     margin-top: 8px;
+}
+
+/* mobile */
+
+@media (max-width: 1010px) {
+    .faq .img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 885px) {
+    .faq .faq_content {
+        flex-direction: column;
+        align-items: center;
+    }
 }

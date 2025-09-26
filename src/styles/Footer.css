@@ -1,7 +1,7 @@
 .footer {
     margin-top: 274px;
     height: 90px;
-    padding-bottom: 60px;
+    padding: 0 40px 60px 40px;
 }
 
 .footer .container {

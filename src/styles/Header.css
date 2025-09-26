@@ -4,25 +4,43 @@ header {
     z-index: 10;
     transition: background-color 0.5s;
 }
+
 .header {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.right_half {
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
 .link_btns {
-    margin-left: 500px;
     display: flex;
     gap: 40px;
-}
-
-.header .btn {
-    margin-left: 80px;
-    margin-bottom: 10px;
 }
 
 header.with_bg {
     background-color: rgba(20, 20, 20, 0.7);
     backdrop-filter: blur(30px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* mobile */
+
+.ham_btn {
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .link_btns, .header .btn {
+        display: none;
+    }
+
+    .ham_btn {
+        display: block;
+    }
 }

@@ -54,3 +54,15 @@ body {
   margin: 0 auto;
   max-width: 780px;
 }
+
+/* mobile */
+
+@media (max-width: 800px) {
+  .main_text {
+    max-width: calc(100% - 80px);
+  }
+
+  .h2 {
+    font-size: 36px;
+  }
+}
