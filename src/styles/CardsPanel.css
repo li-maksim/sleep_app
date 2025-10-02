@@ -19,26 +19,26 @@
     transform: translateY(280px);
 }
 
-.panel .panel_column .card {
+.panel_card {
     min-height: 368px;
     box-sizing: border-box;
     padding: 40px;
 }
 
-.panel .panel_column .panel_card .h3 {
+.panel_card .h3 {
     margin: 0;
     font-size: 26px;
     font-weight: 600;
 }
 
-.panel .panel_column .panel_card .p {
+.panel_card .p {
     margin-top: 20px;
     margin-bottom: 0;
     max-width: 300px;
     text-align: center;
 }
 
-.panel .panel_column .panel_card .card_img {
+.panel_card .card_img {
     margin-top: 20px;
 }
 
@@ -153,5 +153,11 @@
 
     .panel .panel_column:last-child .card_wrapper:last-child {
         transform: translate(400px, -260px);
+    }
+}
+
+@media (max-width: 795px) {
+    .panel {
+        display: none;
     }
 }

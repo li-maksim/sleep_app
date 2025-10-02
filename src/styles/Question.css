@@ -90,3 +90,18 @@
         max-width: 600px;
     }
 }
+
+@media (max-width: 630px) {
+    .question {
+        max-width: 540px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .question {
+        margin: 0 auto;
+        max-width: calc(100% - 20px);
+        padding: 10px 20px;
+    }
+}

@@ -49,3 +49,15 @@
         align-items: center;
     }
 }
+
+@media (max-width: 800px) {
+    .faq {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    .faq .faq_content .questions {
+        max-width: 100%;
+    }
+}

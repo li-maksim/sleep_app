@@ -58,11 +58,27 @@ body {
 /* mobile */
 
 @media (max-width: 800px) {
+  section {
+    overflow: hidden;
+  }
+
   .main_text {
     max-width: calc(100% - 80px);
   }
 
   .h2 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 470px) {
+  .h2 {
+    font-size: 28px;
   }
 }

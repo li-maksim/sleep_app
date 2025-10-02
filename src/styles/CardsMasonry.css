@@ -13,7 +13,7 @@
     height: 227px;
 }
 
-.masonry .masonry_card {
+.masonry_card {
     box-sizing: border-box;
     width: 100%;
     min-height: auto;
@@ -22,14 +22,14 @@
     align-items: start;
 }
 
-.masonry .masonry_card .h3 {
+.masonry_card .h3 {
     color: var(--card-header-color);
     margin: 0;
     font-size: 26px;
     font-weight: 600;
 }
 
-.masonry .masonry_card .p {
+.masonry_card .p {
     margin-top: 16px;
     color: var(--text-alt-color);
 }
@@ -146,5 +146,11 @@
 
     .masonry .horizontal {
         gap: 40px;
+    }
+}
+
+@media (max-width: 795px) {
+    .masonry {
+        display: none;
     }
 }

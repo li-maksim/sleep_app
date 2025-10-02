@@ -320,3 +320,18 @@
     transform: translateX(700px);
     z-index: -1;
 }
+
+/* mobile  */
+
+@media (max-width: 800px) {
+    .bg_home_wave {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 1200px;
+      }
+
+    .bg_manage, .bg_find, .bg_price, .bg_subscirbe {
+        display: none;
+    }
+}

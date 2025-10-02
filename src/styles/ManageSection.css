@@ -10,3 +10,11 @@
 .panel {
     margin-top: 40px;
 }
+
+/* mobile */
+
+@media (max-width: 800px) {
+    .cards_carousel {
+        margin-top: 50px;
+    }
+}

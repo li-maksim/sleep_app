@@ -19,3 +19,9 @@
         margin-top: 28px;
     }
 }
+
+@media (max-width: 795px) {
+    .find {
+        margin-top: 0;
+    }
+}

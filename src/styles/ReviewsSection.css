@@ -62,3 +62,11 @@
 .reviews .p:last-child {
     font-size: 21px;
 }
+
+/* mobile */
+
+@media (max-width: 800px) {
+    .reviews {
+        margin-top: 0;
+    }
+}

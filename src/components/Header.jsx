@@ -49,8 +49,15 @@ function Header() {
         };
       }, [isHamMenuOpened]);
 
+    let headerClassName = ""
+    if (showBg && isHamMenuOpened) {
+        headerClassName = "with_bg dark"
+    } else if (showBg) {
+        headerClassName = "with_bg"
+    }
+
     return (
-        <header className={showBg ? "with_bg" : ""}>
+        <header className={headerClassName}>
             <div className="container header">
                 <a href="#" className="logo">
                     <img src={logo} alt="SleepApp - Home" />
