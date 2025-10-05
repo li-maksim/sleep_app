@@ -6,7 +6,7 @@ import HamburgerMenu from './HamburgerMenu'
 import Button from './Button'
 import '../styles/Header.css'
 
-function Header() {
+function Header({fns}) {
 
     const [showBg, setShowBg] = useState(false)
 
@@ -38,7 +38,14 @@ function Header() {
         if (!isHamMenuOpened) return
     
         const onDocMouseDown = (e) => {
-            if (e.target.closest(".hamburger-react")) return
+            if (e.target.closest('.hamburger-react')) return
+            if (e.target.closest('.link_btn')) {
+                setTimeout(() => {
+                  setIsHamMenuOpened(false)
+                  setShowBg(false)
+                }, 300)
+                return
+              }
             setIsHamMenuOpened(false)
             setShowBg(false)
         };
@@ -64,16 +71,16 @@ function Header() {
                 </a>
                 <div className="right_half">
                     <div className="link_btns">
-                        <LinkButton text={'Features'} />
-                        <LinkButton text={'Price'} />
-                        <LinkButton text={'Contacts'} />
+                        <LinkButton text={'Features'} fn={fns.scrollToFind} />
+                        <LinkButton text={'Price'} fn={fns.scrollToPrice} />
+                        <LinkButton text={'Contacts'} fn={fns.scrollToSub} />
                     </div>
                     <Button text={'Try for free'} altColor={true} />
                     <div className="ham_btn">
                         <Hamburger toggled={isHamMenuOpened} size={36} onToggle={() => toggleHamMenu()} />
                     </div>
                 </div>
-                <HamburgerMenu isOpened={isHamMenuOpened} />
+                <HamburgerMenu fns={fns} isOpened={isHamMenuOpened} />
             </div>
         </header>
     )

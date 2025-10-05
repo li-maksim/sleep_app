@@ -15,14 +15,38 @@ import ToTopButton from './ToTopButton'
 
 function App() {
 
-  const h2Ref = useRef(null)
+  const collectionRef = useRef(null)
+  const findRef = useRef(null)
+  const priceRef = useRef(null)
+  const subRef = useRef(null)
 
-  function scrollToH2() {
-    if (h2Ref.current) {
-      console.log('yup')
-      h2Ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const scrollFns = (() => {
+    function scrollToCollection() {
+      if (collectionRef.current) {
+        collectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } 
+
+    function scrollToFind() {
+      if (findRef.current) {
+        findRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
     }
-  } 
+
+    function scrollToPrice() {
+      if (priceRef.current) {
+        priceRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+
+    function scrollToSub() {
+      if (subRef.current) {
+        subRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+
+    return {scrollToCollection, scrollToFind, scrollToPrice, scrollToSub}
+  })()
 
   return (
     < >
@@ -72,15 +96,15 @@ function App() {
       </div>
     </div>
       <div className="app">
-        <Header />
-        <Home btnFn={scrollToH2} />
-        <CollectionSection ref={h2Ref} />
+        <Header fns={scrollFns} />
+        <Home btnFn={scrollFns.scrollToCollection} />
+        <CollectionSection ref={collectionRef} />
         <ManageSection />
-        <FindSection />
+        <FindSection ref={findRef} />
         <ReviewsSection />
-        <PriceSection price={4.99}/>
+        <PriceSection ref={priceRef} price={4.99}/>
         <FAQSection />
-        <SubscribeSection />
+        <SubscribeSection ref={subRef} />
         <Footer />
         <ToTopButton />
     </div>

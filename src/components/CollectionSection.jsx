@@ -1,5 +1,4 @@
 import '../styles/CollectionSection.css'
-import { useRef } from 'react'
 import Slider from './Slider'
 const svgModules = import.meta.glob('../assets/icons/slider/*.svg', {
     eager: true,

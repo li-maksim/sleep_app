@@ -5,7 +5,7 @@ import SwitchButton from './SwitchButton'
 import PriceCard from './PriceCard'
 import Li from './Li'
 
-function PriceSection({price}) {
+function PriceSection({ref, price}) {
 
     const [switched, setSwitched] = useState(false)
     function toggleSwitched() {
@@ -19,7 +19,7 @@ function PriceSection({price}) {
     return (
         <section className="section price">
             <div className="container">
-                <h2 className="h2">Simple and affordable</h2>
+                <h2 ref={ref} className="h2">Simple and affordable</h2>
                 <SwitchButton switched={switched} fn={toggleSwitched}/>
                 <div className="price_cards">
                     <PriceCard title="Basic" price="Free" descr={"Nothing superfluous, minimal\nset of functions"}>

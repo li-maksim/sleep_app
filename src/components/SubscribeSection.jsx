@@ -3,9 +3,8 @@ import Input from './Input'
 import Button from './Button'
 import { useState } from 'react'
 import squirrel from '../assets/squirrel.jpg'
-import { use } from 'react'
 
-function SubscribeSection() {
+function SubscribeSection({ref}) {
 
     const [formData, setFormData] = useState({
         name: '',
@@ -38,7 +37,7 @@ function SubscribeSection() {
         <div className="sections subscribe">
             <div className="container">
                 <div className="content">
-                    <h2 className="h2">Subscribe to <span className="orange_text">SleepApp</span> weekly <span className="orange_text">Tips&Tricks</span> and relax</h2>
+                    <h2 ref={ref} className="h2">Subscribe to <span className="orange_text">SleepApp</span> weekly <span className="orange_text">Tips&Tricks</span> and relax</h2>
                     <div className="p main_text">Get 15% off by subscription</div>
                     <div className="form_wrapper">
                         <img src={squirrel} alt="Squirrel sleeping on a tree branch" className="img" />
