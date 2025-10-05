@@ -73,3 +73,33 @@
         width: 320px;
     }
 }
+
+@media (max-width: 420px) {
+    .cards_carousel .carousel_content {
+        max-width: 300px;
+    }
+
+    .cards_carousel .masonry_card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cards_carousel .carousel_content {
+        max-width: 260px;
+    }
+
+    .cards_carousel .masonry_card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cards_carousel .carousel_content {
+        max-width: 220px;
+    }
+
+    .cards_carousel .masonry_card {
+        width: 220px;
+    }
+}

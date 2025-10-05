@@ -42,3 +42,34 @@
         max-width: 240px;
     }
 }
+
+@media (max-width: 420px) {
+    .card {
+        width: 300px;
+    }
+
+    .card_img {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        min-height: 250px;
+        width: 260px;
+    }
+
+    .card_img {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        width: 220px;
+    }
+
+    .card_img {
+        max-width: 180px;
+    }
+}

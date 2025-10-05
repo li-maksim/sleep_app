@@ -130,7 +130,21 @@
 }
 
 @media (max-width: 460px) {
+    .subscribe .content {
+        max-width: calc(100% - 20px);
+    }
+
     .subscribe .content .h2 {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .subscribe .content .form_wrapper .form {
+        max-width: 290px;
+    }
+
+    .subscribe .content .form_wrapper .form .btn {
+        max-width: 290px;
     }
 }

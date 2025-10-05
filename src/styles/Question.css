@@ -76,7 +76,7 @@
 }
 
 .question.expanded .bottom {
-    max-height: 50px;
+    max-height: 100px;
 }
 
 .question.expanded .arrow_icon {

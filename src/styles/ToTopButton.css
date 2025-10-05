@@ -37,3 +37,22 @@
 .to_top_btn:active .icon {
     filter: brightness(0) saturate(100%) invert(46%) sepia(9%) saturate(2702%) hue-rotate(236deg) brightness(94%) contrast(97%)
 }
+
+/* mobile */
+
+@media (max-width: 700px) {
+    .to_top_btn {
+        width: 50px;
+        height: 50px;
+        right: 35px;
+        bottom: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .to_top_btn {
+        width: 40px;
+        height: 40px;
+        bottom: 60px;
+    }
+}

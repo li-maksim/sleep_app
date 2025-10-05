@@ -58,3 +58,26 @@
         max-width: 400px;
     }
 }
+
+@media (max-width: 420px) {
+    .price_card {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 380px) {
+    .price_card {
+        max-width: 320px;
+        padding: 30px;
+        padding-bottom: 50px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 340px) {
+    .price_card {
+        max-width: 300px;
+        padding: 25px;
+        padding-bottom: 50px;
+    }
+}

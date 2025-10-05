@@ -81,5 +81,7 @@ body {
 @media (max-width: 470px) {
   .h2 {
     font-size: 28px;
+    box-sizing: border-box;
+    padding: 0px 10px;
   }
 }
