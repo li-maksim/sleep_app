@@ -11,3 +11,10 @@
     font-size: 21px;
     text-align: center;
 }
+
+@media (max-width: 640px) {
+    .collection .collection_end {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

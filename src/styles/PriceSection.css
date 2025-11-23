@@ -12,6 +12,7 @@
 
 .price .btn {
     display: block;
+    box-sizing: border-box;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -49,5 +50,11 @@
     }
     .price_cards .price_card::before {
         display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .price {
+        margin-top: 40px;
     }
 }

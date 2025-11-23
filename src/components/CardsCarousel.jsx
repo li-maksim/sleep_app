@@ -26,14 +26,17 @@ function CardsCarousel({children}) {
     const endX = useRef(0)
   
     function handleTouchStart(e) {
+      if (e.target.closest("button")) return
       startX.current = e.touches[0].clientX
     }
   
     function handleTouchMove(e) {
+      if (e.target.closest("button")) return
       endX.current = e.touches[0].clientX
     }
   
-    function handleTouchEnd() {
+    function handleTouchEnd(e) {
+      if (e.target.closest("button")) return
       const deltaX = startX.current - endX.current;
       const threshold = 50;
   

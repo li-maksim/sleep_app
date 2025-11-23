@@ -18,3 +18,9 @@
         margin-top: 50px;
     }
 }
+
+@media (max-width: 640px) {
+    .manage .h2 {
+        margin-top: 40px;
+    }
+}

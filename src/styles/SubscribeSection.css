@@ -95,6 +95,7 @@
     .subscribe .content .form_wrapper .form .btn {
         max-width: 460px;
     }
+    
 }
 
 @media (max-width: 1010px) {
@@ -109,7 +110,18 @@
     }
 }
 
+@media (max-width: 640px) {
+    .subscribe {
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 575px) {
+
+    .subscribe .content .form_wrapper {
+        margin-top: 20px;
+    }
+
     .subscribe .content .form_wrapper .form {
         max-width: 360px;
     }
@@ -129,13 +141,16 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 470px) {
     .subscribe .content {
         max-width: calc(100% - 20px);
+        padding: 40px;
+        min-height: auto;
     }
 
     .subscribe .content .h2 {
         font-size: 24px;
+        padding: 0;
     }
 }
 

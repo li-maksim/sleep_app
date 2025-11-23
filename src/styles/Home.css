@@ -80,6 +80,10 @@
     .home h1 span {
         margin-left: 0;
     }
+
+    .home .btn {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 536px) {
@@ -97,5 +101,13 @@
     .home .home_img {
         width: 75%;
         height: 75%;
+    }
+}
+
+@media (max-width: 360px) {
+    .home h1 {
+        font-size: 32px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
